@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Alexandru Manicea/Facultate/QRCodeScanner/app/src/main/res/drawable/button_back.xml" value="0.333" />
+        <entry key="..\:/Alexandru Manicea/Facultate/QRCodeScanner/app/src/main/res/layout/activity_generate_qrcode.xml" value="0.25" />
         <entry key="..\:/Alexandru Manicea/Facultate/QRCodeScanner/app/src/main/res/layout/activity_home.xml" value="0.358695652173913" />
         <entry key="..\:/Alexandru Manicea/Facultate/QRCodeScanner/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
       </map>
