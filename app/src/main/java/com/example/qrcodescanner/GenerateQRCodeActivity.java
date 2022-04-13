@@ -15,6 +15,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.zxing.WriterException;
+
+import androidmads.library.qrgenearator.QRGContents;
+import androidmads.library.qrgenearator.QRGEncoder;
 
 public class GenerateQRCodeActivity extends AppCompatActivity {
 
@@ -50,13 +54,17 @@ public class GenerateQRCodeActivity extends AppCompatActivity {
                     int height = point.y;
                     int dimen = width<height ? width:height;
                     dimen = dimen * 3/4;
+                    qrgEncoder = new QRGEncoder(dataEdt.getText().toString(), null, QRGContents.Type.TEXT,dimen);
+                    bitmap = qrgEncoder.getBitmap();
+                    qrCodeTV.setVisibility(View.GONE);
+                    qrCodeIV.setImageBitmap(bitmap);
+                }
                 }
 
-            }
+
         });
 
     }
 
-    private class QRGEncoder {
-    }
+
 }
